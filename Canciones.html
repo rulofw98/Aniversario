@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet"> 
+    <script defer src="fontawesome/js/all.js"></script>
+    <link rel="icon" type="icon/png" href="dist/img/logo.png">
+
+    <title>Regalo BB</title>
+  </head>
+  <body >
+    <section class="container-fluid" id="contenedor0" >
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 banner">
+              <img src="dist/img/banner.png" class="banner1">
+            </div>
+            <div class="col-12 menu" align="center">
+              <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand"  href="pages/Principal.html">Inicio</a>
+                <button id="booto" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      
+                      <li class="nav-item active">
+                        <a class="nav-link" data-toggle="tooltip" data-placement="top" data-html="true" title="<em>Algunas fotos de nosotros</em>" href="pages/Galeria.html">Galería de fotos<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link" data-toggle="tooltip" data-placement="top" data-html="true" title="<em>Canciones que me hacen pensar en ti</em>" href="Canciones.html">Canciones dedicadas<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link" data-toggle="tooltip" data-placement="top" data-html="true" title="<em>Lo que amo de ti</em>" href="pages/Cosas.html">Cosas que amo de ti<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link" data-toggle="tooltip" data-placement="top" data-html="true" title="<em>Carta final</em>" href="pages/Carta.html">Dedicatoria<span class="sr-only">(current)</span></a>
+                      </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search" >
+                      <button class="btn btn-outline-warning  my-3 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                  </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 cardSec">
+          <div class="body" align="center">
+            <audio id="player" ontimeupdate="updateProgress();">
+              <source  id="source"> Audio no soportado  
+            </audio>
+            <div id="controls">
+              <div class="timer" id="timer">
+                &nbsp;
+              </div>
+              <div class="volumen">
+                Vol: 
+                <i class="fas fa-volume-down"></i> 
+                <input type="range" name="volumen" id="volumen" min="0" max="1" step="0.01" value="0.75"> 
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <i class="fas fa-backward fa-5x" onclick="prevMusic();"></i>
+              <i class="far fa-play-circle fa-5x" onclick="togglePlay();" id="iconPlay"></i> 
+              <i class="fas fa-forward fa-5x" onclick="nextMusic();"></i>
+              <br>
+              <span id="currentPlay"></span><br>
+              <progress id="progress" value="0" max="100" ></progress>
+              <h3>Música con amor</h3>
+              <div id="playList"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+      <script>
+                $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+      </script>    
+  </body>
+</html>
