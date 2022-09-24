@@ -83,7 +83,7 @@ p{
 
 .contenedorP{
     height: 100%;
-    background-image: url(../resources/fondo.jpg); 
+    background-image: url(../dist/img/fondo.jpg); 
     background-size: 100% ;
 }
 
@@ -190,7 +190,7 @@ input:valid{
 
 .titulo{
     font-size: 50px;
-    background: url("../resources/TextOrange.png") repeat-y;
+    background: url("../dist/img/TextOrange.png") repeat-y;
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -267,7 +267,7 @@ input:valid{
 
     .titulo{
     font-size: 50px;
-    background: url("../resources/TextOrange.png") repeat-y;
+    background: url("../dist/img/TextOrange.png") repeat-y;
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
