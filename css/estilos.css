@@ -80,7 +80,7 @@ p{
 #booto{
     background-color: white;
 }
-
+/*Fondo*/
 .contenedorP{
     height: 100%;
     background-image: url(../dist/img/fondo.jpg); 
@@ -187,7 +187,7 @@ input:valid{
   opacity: 0;
 }
 
-
+/*TITULO*/
 .titulo{
     font-size: 50px;
     background: url("../dist/img/TextOrange.png") repeat-y;
@@ -264,7 +264,7 @@ input:valid{
         background-color: #ECEDE7;
         background-image: none;
     }
-
+/*TITULO*/
     .titulo{
     font-size: 50px;
     background: url("../dist/img/TextOrange.png") repeat-y;
